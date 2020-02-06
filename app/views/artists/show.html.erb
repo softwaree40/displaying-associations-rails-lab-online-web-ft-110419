@@ -1,9 +1,8 @@
-
+<h1><%= @artist.name %></h1>
 <ul>
 <% @artist.songs do |song| %>
 <li>
 <%= link_to song.title, song_path(song)%>
-<%binding%>
 </li>
 <%end%>
 </ul>
